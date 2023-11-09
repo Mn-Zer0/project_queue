@@ -1,0 +1,427 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <meta name="author" content="Никита Пшеничный" />
+      <title>Электронная очередь</title>
+
+  
+      <link rel="stylesheet" href="{{ url_for('static', filename='global.css')}}" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      />
+    </head>
+    <body>
+      {{error}}
+      <div class="fantastical-scheduling-ui">
+        <main class="rectangle-parent">
+          <section class="frame-child"></section>
+          <section class="frame-wrapper">
+            <div class="screenshot-2023-01-11-at-408-parent">
+              <div class="screenshot-2023-01-11-at-408"></div>
+              <div class="left-parent">
+                <div class="left">
+                  <div class="frame-parent">
+                    <div class="frame-group">
+                      <button class="frame-container">
+                        <div class="frame">
+                          <img
+                            class="vector-icon"
+                            alt=""
+                            src="./public/vector.svg"
+                          />
+                        </div>
+                        <div class="div">Электротехника</div>
+                      </button>
+                      <button class="frame-button">
+                        <div class="frame-div">
+                          <div class="frame">
+                            <img
+                              class="vector-icon"
+                              alt=""
+                              src="./public/vector1.svg"
+                            />
+                          </div>
+                          <div class="div">Семенова Т.Н. Ауд. Н-122</div>
+                        </div>
+                      </button>
+                      <button class="frame-container">
+                        <div class="frame">
+                          <img
+                            class="vector-icon"
+                            alt=""
+                            src="./public/vector1.svg"
+                          />
+                        </div>
+                        <div class="div">Перед вами: 7 человек</div>
+                      </button>
+                    </div>
+                    <h1 class="h1">Расписание</h1>
+                  </div>
+                </div>
+                <div class="frame-parent2">
+                  <div class="component-parent">
+                    <button class="component">
+                      <div class="pm">{{user1}}</div>
+                    </button>
+                    <button class="component">
+                      <div class="pm">{{user2}}</div>
+                    </button>
+                    <button class="component">
+                      <div class="pm">{{user3}}</div>
+                    </button>
+                    <button class="component">
+                      <div class="pm">{{user4}}</div>
+                    </button>
+                    <div class="div3">
+                      <div class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <div class="component-group">
+                          <div class="component4">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component5">
+                            <div class="pm4">4 пара</div>
+                          </div>
+                          <div class="component6">
+                            <div class="pm4">3 пара</div>
+                          </div>
+                          <div class="component7">
+                            <div class="pm4">2 пара</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date">
+                        <div class="wed">ПН</div>
+                        <div class="div4">
+                          <div class="wrapper">
+                            <b class="b">9</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div3">
+                      <div class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <div class="component-container">
+                          <div class="component4">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component5">
+                            <div class="pm4">4 пара</div>
+                          </div>
+                          <div class="component6">
+                            <div class="pm4">3 пара</div>
+                          </div>
+                          <div class="component11">
+                            <div class="pm4">2 пара</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date1">
+                        <div class="wed-parent">
+                          <div class="wed">ВТ</div>
+                          <div class="div6">
+                            <div class="wrapper">
+                              <b class="b">10</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div3">
+                      <div class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <div class="group-div">
+                          <div class="component4">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component13">
+                            <div class="pm4">4 пара</div>
+                          </div>
+                          <div class="component14">
+                            <div class="pm4">3 пара</div>
+                          </div>
+                          <div class="component11">
+                            <div class="pm4">2 пара</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date1">
+                        <div class="wed-parent">
+                          <div class="wed">СР</div>
+                          <div class="div6">
+                            <div class="wrapper">
+                              <b class="b">11</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div3">
+                      <div class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <div class="component-container">
+                          <div class="component4">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component5">
+                            <div class="pm4">4 пара</div>
+                          </div>
+                          <div class="component6">
+                            <div class="pm4">3 пара</div>
+                          </div>
+                          <div class="component11">
+                            <div class="pm4">2 пара</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date1">
+                        <div class="wed-parent">
+                          <div class="wed">ЧТ</div>
+                          <div class="div6">
+                            <div class="wrapper">
+                              <b class="b">12</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div3">
+                      <div class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <div class="component-parent2">
+                          <div class="component4">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component5">
+                            <div class="pm4">4 пара</div>
+                          </div>
+                          <div class="component14">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component11">
+                            <div class="pm4">2 пара</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date1">
+                        <div class="wed-parent">
+                          <div class="wed">ПТ</div>
+                          <div class="div6">
+                            <div class="wrapper">
+                              <b class="b">13</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div3">
+                      <div class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <div class="group-div">
+                          <div class="component4">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component13">
+                            <div class="pm4">4 пара</div>
+                          </div>
+                          <div class="component14">
+                            <div class="pm4">3 пара</div>
+                          </div>
+                          <div class="component11">
+                            <div class="pm4">2 пара</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date5">
+                        <div class="wed-parent">
+                          <div class="wed">СБ</div>
+                          <div class="div14">
+                            <div class="wrapper">
+                              <b class="b">14</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div3">
+                      <div class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <div class="group-div">
+                          <div class="component4">
+                            <div class="pm4">1 пара</div>
+                          </div>
+                          <div class="component13">
+                            <div class="pm4">4 пара</div>
+                          </div>
+                          <div class="component14">
+                            <div class="pm4">3 пара</div>
+                          </div>
+                          <div class="component11">
+                            <div class="pm4">2 пара</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date5">
+                        <div class="wed-parent">
+                          <div class="wed">ВС</div>
+                          <div class="div14">
+                            <div class="wrapper">
+                              <b class="b">8</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="h3">Четная неделя</h3>
+                </div>
+                <div class="frame-parent3">
+                  <div class="rectangle-parent6">
+                    <div class="frame-child5"></div>
+                    <div class="div17">
+                      <button class="ellipse">
+                        <div class="ellipse-inner">
+                          <div class="ellipse-div"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse1">
+                        <div class="wrapper6">
+                          <div class="div18"></div>
+                        </div>
+                      </button>
+                      <div class="ellipse2">
+                        <div class="ellipse-inner">
+                          <div class="ellipse-div"></div>
+                        </div>
+                      </div>
+                      <button class="ellipse3">
+                        <div class="wrapper6">
+                          <div class="div18"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse4">
+                        <div class="wrapper6">
+                          <div class="div18"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse5">
+                        <div class="wrapper6">
+                          <div class="div21"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse6">
+                        <div class="wrapper6">
+                          <div class="div18"></div>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="div23">
+                      <button class="ellipse">
+                        <div class="ellipse-inner1">
+                          <div class="ellipse-div"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse1">
+                        <div class="wrapper6">
+                          <div class="div18"></div>
+                        </div>
+                      </button>
+                      <div class="ellipse9">
+                        <div class="ellipse-inner1">
+                          <div class="ellipse-div"></div>
+                        </div>
+                      </div>
+                      <button class="ellipse3">
+                        <div class="wrapper6">
+                          <div class="div18"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse11">
+                        <div class="ellipse-inner1">
+                          <div class="ellipse-div"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse12">
+                        <div class="ellipse-inner1">
+                          <div class="ellipse-div"></div>
+                        </div>
+                      </button>
+                      <button class="ellipse13">
+                        <div class="ellipse-inner1">
+                          <div class="ellipse-div"></div>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="parent">
+                      <div class="div26">ВТ</div>
+                      <div class="div27">СР</div>
+                      <div class="div28">ПН</div>
+                      <div class="div29">ЧТ</div>
+                      <div class="div30">ПТ</div>
+                      <div class="div31">СБ</div>
+                    </div>
+                    <div class="group">
+                      <h3 class="h31">Октябрь</h3>
+                      <div class="div32">2023</div>
+                    </div>
+                  </div>
+                  <div class="ellipse-wrapper">
+                    <div class="ellipse-div"></div>
+                  </div>
+                  <div class="frame-parent4">
+                    <button class="frame3">
+                      <img
+                        class="vector-icon3"
+                        alt=""
+                        src="./public/vector2.svg"
+                      />
+                    </button>
+                    <button class="wrapper13">
+                      <div class="div33">Четная</div>
+                    </button>
+                    <button class="frame4">
+                      <img
+                        class="vector-icon3"
+                        alt=""
+                        src="./public/vector3.svg"
+                      />
+                    </button>
+                  </div>
+                  <div class="ellipsevariant4">
+                    <div class="wrapper6">
+                      <div class="wed">16</div>
+                    </div>
+                  </div>
+                  <button class="component32">
+                    <div class="pm">Пропустить</div>
+                  </button>
+<!-- 
+		  
+                  <button class="component33">
+                    <div class="pm33" name="queue">Занять очередь</div>
+                  </button>
+          	  </form>
+-->		  
+
+		  <form action="" method="post">
+		  <button class="component33">
+		    <input type="submit" value="queue" name="queue">
+                  </button>
+		  </form>
+
+		  
+			
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </body>
+  </html>
+  
